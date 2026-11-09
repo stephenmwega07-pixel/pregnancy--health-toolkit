@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<!-- saved from url=(0071)file:///C:/Users/dee%20stevo/Desktop/healthtoolkit/index.html#pregnancy -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Pregnancy Health Toolkit</title>
+
+<style>
+
+/* GENERAL DESIGN */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f1f8f6;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* HEADER */
+
+header {
+    background: #087f70;
+    color: white;
+    text-align: center;
+    padding: 35px 15px;
+}
+
+header h1 {
+    font-size: 30px;
+}
+
+/* NAVIGATION */
+
+nav {
+    background: #064e45;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+    display: inline-block;
+}
+
+nav a:hover {
+    color: #a8e6cf;
+}
+
+/* MAIN CONTENT */
+
+main {
+    width: 92%;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.welcome {
+    text-align: center;
+    padding: 35px 15px;
+}
+
+.tool {
+    background: white;
+    padding: 25px;
+    margin: 25px 0;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px #ddd;
+}
+
+h2 {
+    color: #087f70;
+    margin-bottom: 15px;
+}
+
+h3 {
+    margin: 15px 0;
+}
+
+/* FORM ELEMENTS */
+
+input, textarea {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0 20px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+button {
+    background: #087f70;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    margin: 5px 0;
+}
+
+button:hover {
+    background: #064e45;
+}
+
+/* GUIDELINES */
+
+.guide {
+    background: #e6f5ef;
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 8px;
+}
+
+ul {
+    padding-left: 25px;
+}
+
+/* EMERGENCY SECTION */
+
+.emergency {
+    border-left: 6px solid #d93025;
+}
+
+.emergency h2 {
+    color: #d93025;
+}
+
+/* FOOTER */
+
+footer {
+    background: #064e45;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+/* MOBILE RESPONSIVENESS */
+
+@media (max-width: 600px) {
+
+    nav a {
+        display: block;
+    }
+
+    header h1 {
+        font-size: 23px;
+    }
+
+}
+
+</style>
+
+
+
+
+<!-- HEADER -->
+
+<header>
+    <h1>Pregnancy Health Toolkit</h1>
+    <p>Your Companion for a Healthy Pregnancy</p>
+</header>
+
+<!-- NAVIGATION -->
+
+<nav>
+    <a href="file:///C:/Users/dee%20stevo/Desktop/healthtoolkit/index.html#home">Home</a>
+    <a href="file:///C:/Users/dee%20stevo/Desktop/healthtoolkit/index.html#medicine">Medicine Reminder</a>
+    <a href="file:///C:/Users/dee%20stevo/Desktop/healthtoolkit/index.html#pregnancy">Pregnancy Guide</a>
+    <a href="file:///C:/Users/dee%20stevo/Desktop/healthtoolkit/index.html#nutrition">Nutrition</a>
+    <a href="file:///C:/Users/dee%20stevo/Desktop/healthtoolkit/index.html#antenatal">Antenatal Care</a>
+    <a href="file:///C:/Users/dee%20stevo/Desktop/healthtoolkit/index.html#emergency">Emergency</a>
+</nav>
+
+<main>
+
+<!-- HOME -->
+
+<section id="home" class="welcome">
+
+    <h2>Welcome to Your Health Toolkit</h2>
+
+    <p>
+        Access pregnancy guidelines, medication reminders,
+        nutrition information and maternal health education.
+    </p>
+
+</section>
+
+<!-- MEDICATION REMINDER -->
+
+<section id="medicine" class="tool">
+
+    <h2>Medication Reminder</h2>
+
+    <p>
+        Record medicine schedules prescribed by your
+        healthcare professional.
+    </p>
+
+    <form id="medicineForm">
+
+        <label>Medicine Name:</label>
+
+        <input type="text" id="drug" placeholder="Enter medicine name" required="">
+
+        <label>Prescribed Time:</label>
+
+        <input type="time" id="time" required="">
+
+        <label>Healthcare Provider's Instructions:</label>
+
+        <textarea id="instructions" placeholder="Enter prescribed instructions"></textarea>
+
+        <button type="submit">Add Reminder</button>
+
+    </form>
+
+    <h3>My Medication Schedule</h3>
+
+    <div id="medicineList"></div>
+
+</section>
+
+<!-- PREGNANCY GUIDELINES -->
+
+<section id="pregnancy" class="tool">
+
+    <h2>Pregnancy Guidelines</h2>
+
+    <div class="guide">
+
+        <h3>First Trimester (Weeks 1–12)</h3>
+
+        <ul>
+            <li>Book your first antenatal appointment.</li>
+            <li>Discuss recommended supplements with your clinician.</li>
+            <li>Avoid alcohol and smoking.</li>
+            <li>Seek professional advice before taking medicine.</li>
+        </ul>
+
+    </div>
+
+    <div class="guide">
+
+        <h3>Second Trimester (Weeks 13–27)</h3>
+
+        <ul>
+            <li>Attend scheduled antenatal visits.</li>
+            <li>Eat a balanced diet.</li>
+            <li>Discuss pregnancy screening with your provider.</li>
+            <li>Ask about safe physical activities.</li>
+        </ul>
+
+    </div>
+
+    <div class="guide">
+
+        <h3>Third Trimester (Weeks 28–Birth)</h3>
+
+        <ul>
+            <li>Attend regular antenatal appointments.</li>
+            <li>Discuss your birth plan.</li>
+            <li>Monitor your baby's movements.</li>
+            <li>Prepare for delivery.</li>
+        </ul>
+
+    </div>
+
+</section>
+
+<!-- NUTRITION -->
+
+<section id="nutrition" class="tool">
+
+    <h2>Pregnancy Nutrition Guide</h2>
+
+    <ul>
+        <li>Eat vegetables and fruits.</li>
+        <li>Include protein-rich foods.</li>
+        <li>Eat foods rich in iron.</li>
+        <li>Drink safe, clean water.</li>
+        <li>Choose well-cooked foods.</li>
+        <li>Avoid unpasteurized dairy products.</li>
+    </ul>
+
+</section>
+
+<!-- ANTENATAL CARE -->
+
+<section id="antenatal" class="tool">
+
+    <h2>Antenatal Care Information</h2>
+
+    <p>
+        Antenatal care helps monitor the health
+        of both mother and baby during pregnancy.
+    </p>
+
+    <ul>
+        <li>Blood pressure checks.</li>
+        <li>Blood and urine tests when indicated.</li>
+        <li>Baby growth monitoring.</li>
+        <li>Pregnancy health education.</li>
+        <li>Birth preparation.</li>
+    </ul>
+
+</section>
+
+<!-- EMERGENCY -->
+
+<section id="emergency" class="tool emergency">
+
+    <h2>Pregnancy Danger Signs</h2>
+
+    <p>Seek urgent medical attention if you experience:</p>
+
+    <ul>
+        <li>Heavy vaginal bleeding.</li>
+        <li>Severe abdominal pain.</li>
+        <li>Severe headache or blurred vision.</li>
+        <li>Difficulty breathing.</li>
+        <li>Convulsions or fainting.</li>
+        <li>Fluid leaking from the vagina.</li>
+        <li>Reduced or absent baby movements.</li>
+    </ul>
+
+    <p>
+        Do not wait for a website reminder when experiencing
+        these symptoms.
+    </p>
+
+</section>
+
+</main>
+
+<!-- FOOTER -->
+
+<footer>
+
+    <p>© 2026 Pregnancy Health Toolkit</p>
+
+    <p>
+        Educational information only.
+        Always follow advice from qualified healthcare professionals.
+    </p>
+
+</footer>
+
+<!-- JAVASCRIPT -->
+
+<script>
+
+const medicineForm =
+document.getElementById("medicineForm");
+
+medicineForm.addEventListener("submit", function(event) {
+
+    event.preventDefault();
+
+    const drug =
+    document.getElementById("drug").value;
+
+    const time =
+    document.getElementById("time").value;
+
+    const instructions =
+    document.getElementById("instructions").value;
+
+    const medicineList =
+    document.getElementById("medicineList");
+
+    const reminder = document.createElement("div");
+
+    reminder.className = "guide";
+
+    function escapeHTML(value) {
+        return value.replace(/[&<>"']/g, function(character) {
+            return {
+                "&": "&amp;",
+                "<": "&lt;",
+                ">": "&gt;",
+                '"': "&quot;",
+                "'": "&#039;"
+            }[character];
+        });
+    }
+
+    reminder.innerHTML = `
+        <h3>${escapeHTML(drug)}</h3>
+        <p>Prescribed Time: ${escapeHTML(time)}</p>
+        <p>Instructions: ${escapeHTML(instructions)}</p>
+    `;
+
+    medicineList.appendChild(reminder);
+
+    medicineForm.reset();
+
+});
+
+</script>
+
+
+
+    
+
+</body></html>
