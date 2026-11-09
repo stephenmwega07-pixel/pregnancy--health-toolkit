@@ -1645,6 +1645,32 @@ medicineForm.addEventListener("submit", function(event) {
         <p>Prescribed Time: ${escapeHTML(time)}</p>
         <p>Instructions: ${escapeHTML(instructions)}</p>
     `;
+    document.getElementById('calc-weeks-btn').addEventListener('click', function() {
+    const lmpValue = document.getElementById('lmp-input').value;
+    
+    if (!lmpValue) {
+        document.getElementById('weeks-result').textContent = "Please select a valid date.";
+        return;
+    }
+
+    const lmpDate = new Date(lmpValue);
+    const today = new Date();
+    
+    // Calculate difference in days
+    const diffTime = today - lmpDate;
+    const diffDays = Math.floor(diffTime / (1000 * 60 * 60 * 24));
+
+    if (diffDays < 0) {
+        document.getElementById('weeks-result').textContent = "The LMP date cannot be in the future.";
+        return;
+    }
+
+    const weeks = Math.floor(diffDays / 7);
+    const days = diffDays % 7;
+
+    document.getElementById('weeks-result').textContent = 
+        `Current Progress: ${weeks} weeks and ${days} days pregnant.`;
+
 
     medicineList.appendChild(reminder);
 
@@ -1693,7 +1719,13 @@ medicineForm.addEventListener("submit", function(event) {
 </body>
 </html>
 
-});
+<div class="calculator-card">
+  <h2>Gestational Age Calculator</h2>
+  <label for="lmp-input">Enter First Day of Last Period (LMP):</label>
+  <input type="date" id="lmp-input">
+  <button id="calc-weeks-btn">Calculate Current Week</button>
+  <p id="weeks-result"></p>
+</div>
 
 </script>
 
